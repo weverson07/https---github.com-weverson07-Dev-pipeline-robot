@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-05-26T00:11:00.938007" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Pipeline Project" source="C:\Users\HP\Downloads\robot_pipeline_project">
+<suite id="s1-s1" name="Tests" source="C:\Users\HP\Downloads\robot_pipeline_project\tests">
+<suite id="s1-s1-s1" name="TesteExemplo" source="C:\Users\HP\Downloads\robot_pipeline_project\tests\TesteExemplo.robot">
+<test id="s1-s1-s1-t1" name="Teste Headless Chrome Na Pipeline" line="20">
+<kw name="Iniciar sessão web" owner="BrowserKeywords" type="SETUP">
+<kw name="Selecionar URL por ambiente" owner="BrowserKeywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-26T00:11:02.051300" level="INFO">${BASE_URL} = https://example-umc.com</msg>
+<var>${BASE_URL}</var>
+<arg>${BASE_URL_UMC}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-26T00:11:02.050090" elapsed="0.001210"/>
+</kw>
+<if>
+<branch type="IF" condition="'${AMBIENTE}' == 'umc'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_UMC}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.052342" elapsed="0.001037"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.052342" elapsed="0.001037"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'upf'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_UPF}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.054544" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.053379" elapsed="0.002411"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'utp'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_UTP}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.055790" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.055790" elapsed="0.000998"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'haoc'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_HAOC}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.056788" elapsed="0.000997"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.056788" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'infoprod'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_INFOPROD}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.058782" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.057785" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'kroton'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_KROTON}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.059778" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.058782" elapsed="0.000996"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'mackenzie'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_MACKENZIE}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.060776" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.060776" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'stricto'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${BASE_URL_STRICTO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.061773" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.061773" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'gestor'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${GESTO_URL}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.062770" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.061773" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'freto'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${URLfreto}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.063767" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.062770" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE IF" condition="'${AMBIENTE}' == 'veryCode'">
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-05-26T00:11:02.064764" level="INFO">${BASE_URL} = https://vericode.com.br/pt</msg>
+<arg>${BASE_URL}</arg>
+<arg>${UrlVeryCode}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-05-26T00:11:02.063767" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2025-05-26T00:11:02.063767" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE">
+<kw name="Fail" owner="BuiltIn">
+<arg>Ambiente ${AMBIENTE} não encontrado.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-05-26T00:11:02.065762" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T00:11:02.064764" elapsed="0.000998"/>
+</branch>
+<status status="PASS" start="2025-05-26T00:11:02.052342" elapsed="0.013420"/>
+</if>
+<arg>${AMBIENTE}</arg>
+<status status="PASS" start="2025-05-26T00:11:02.047774" elapsed="0.017988"/>
+</kw>
+<kw name="Get Driver Path With Browser" owner="WebDriver">
+<msg time="2025-05-26T00:11:02.266092" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2025-05-26T00:11:04.568128" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-05-26T00:11:04.663609" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-05-26T00:11:04.763547" level="INFO">Driver [C:\Users\HP\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache</msg>
+<msg time="2025-05-26T00:11:04.765839" level="INFO">C:\Users\HP\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32\chromedriver.exe</msg>
+<msg time="2025-05-26T00:11:04.767215" level="INFO">${DRIVER_PATH} = C:\Users\HP\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32\chromedriver.exe</msg>
+<var>${DRIVER_PATH}</var>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-05-26T00:11:02.067036" elapsed="2.700179"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-26T00:11:04.771106" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>executable_path=${DRIVER_PATH}</arg>
+<arg>options=${OPTIONS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-26T00:11:04.768500" elapsed="1.646782"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-26T00:11:06.416291" level="INFO">add_argument("--ignore-local-proxy-environment-variables")</msg>
+<arg>${OPTIONS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-26T00:11:06.416291" elapsed="0.001245"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-26T00:11:06.418042" elapsed="0.049809"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-26T00:11:06.467851" level="INFO">Opening url 'https://vericode.com.br/pt'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-26T00:11:06.467851" elapsed="4.790306"/>
+</kw>
+<arg>chrome</arg>
+<arg>${OPTIONS}</arg>
+<arg>veryCode</arg>
+<status status="PASS" start="2025-05-26T00:11:02.046777" elapsed="9.212723"/>
+</kw>
+<kw name="Given Inserir usuário Válido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_EXPLORE_SOL}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-26T00:11:11.267667" elapsed="0.185679"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-26T00:11:11.457351" level="INFO">Clicking element 'xpath=//*[@class="button button--primary"]'.</msg>
+<arg>${BTN_EXPLORE_SOL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T00:11:11.454361" elapsed="0.505632"/>
+</kw>
+<status status="PASS" start="2025-05-26T00:11:11.262943" elapsed="0.698098"/>
+</kw>
+<kw name="When Clicar no Botão de Entrar">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-26T00:11:12.285612" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-26T00:11:11.968078" elapsed="0.318801"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MANU_SOMOS_VERY}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-26T00:11:12.286879" elapsed="0.046546"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-26T00:11:12.334468" level="INFO">Clicking element 'xpath=//a[text()="somos veri"]'.</msg>
+<arg>${MANU_SOMOS_VERY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T00:11:12.333425" elapsed="0.212097"/>
+</kw>
+<status status="PASS" start="2025-05-26T00:11:11.962032" elapsed="0.584999"/>
+</kw>
+<kw name="Then Verificar Login Bem Sucedido">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-26T00:11:12.838739" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-26T00:11:12.551776" elapsed="0.288173"/>
+</kw>
+<status status="PASS" start="2025-05-26T00:11:12.549681" elapsed="0.291275"/>
+</kw>
+<kw name="Finalizar sessão web" owner="BrowserKeywords" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-26T00:11:12.845249" elapsed="6.435346"/>
+</kw>
+<status status="PASS" start="2025-05-26T00:11:12.844077" elapsed="6.436518"/>
+</kw>
+<status status="PASS" start="2025-05-26T00:11:02.044034" elapsed="17.237561"/>
+</test>
+<status status="PASS" start="2025-05-26T00:11:01.029385" elapsed="18.254825"/>
+</suite>
+<status status="PASS" start="2025-05-26T00:11:01.024682" elapsed="18.262936"/>
+</suite>
+<status status="PASS" start="2025-05-26T00:11:00.954249" elapsed="18.336856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Pipeline Project" id="s1" pass="1" fail="0" skip="0">Robot Pipeline Project</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robot Pipeline Project.Tests</stat>
+<stat name="TesteExemplo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot Pipeline Project.Tests.TesteExemplo</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-26T00:11:01.048940" level="ERROR">Error in file 'C:\Users\HP\Downloads\robot_pipeline_project\common\constants.resource' on line 2: Importing library 'C:\Users\HP\Downloads\robot_pipeline_project\common\LoadEnv.py' failed: ModuleNotFoundError: No module named 'LoadEnv'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\HP\Downloads\robot_pipeline_project\common
+  C:\Users\HP\Downloads\robot_pipeline_project\lib
+  C:\Users\HP\Downloads\robot_pipeline_project\resources
+  c:\Users\HP\.vscode\extensions\d-biehl.robotcode-1.2.0\bundled\libs
+  c:\Users\HP\.vscode\extensions\d-biehl.robotcode-1.2.0\bundled\tool\robotcode
+  C:\Users\HP\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\HP\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\HP\AppData\Local\Programs\Python\Python312
+  C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>
